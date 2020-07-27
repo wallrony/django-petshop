@@ -19,8 +19,8 @@
 
 <h2>Objetos</h2>
 
-<p>Na aplicação, os Pets seguem o seguinte modelo de objeto, tanto na adição quanto no retorno do mesmo:</p>
-```
+Na aplicação, os Pets seguem o seguinte modelo de objeto, tanto na adição quanto no retorno do mesmo:</br>
+```json
 {
   "id": "Presente somente no retorno das requisições GET, PUT e POST.",
   "nome": "Nome do pet. Facultativo.",
@@ -29,17 +29,17 @@
 }
 ```
 
-<p>Opções na inserção de raças (choices):</p>
-```
+Opções na inserção de raças (choices):</br>
+```json
 [
-  'LAB', // Labrador
-  'BUL', // Boldogue
-  'POO', // Poodle
-  'PAS', // Pastor Alemão
-  'BEA', // Beagle
-  'GOL', // Golden Retriever
-  'CHI', // Chihuahua
-  'HUS', // Husky Siberiano
+  "LAB", // Labrador
+  "BUL", // Boldogue
+  "POO", // Poodle
+  "PAS", // Pastor Alemão
+  "BEA", // Beagle
+  "GOL", // Golden Retriever
+  "CHI", // Chihuahua
+  "HUS", // Husky Siberiano
 ]
 ```
 
@@ -48,6 +48,7 @@
 <p>Abaixo está uma tabela de requisições em relação aos pets.</p>
 
 | Método | URL                 | Descrição                                    |
+|--------|---------------------|----------------------------------------------|
 | GET    | /api/core/pets      | Retorna todos os pets.                       |
 | GET    | /api/core/pets/:id  | Retorna um único pet com o id fornecido.     |
 | POST   | /api/core/pets      | Adiciona um pet seguindo o modelo de objeto. |
